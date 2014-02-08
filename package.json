@@ -1,7 +1,7 @@
 {
   "name": "kindly",
   "description": "A thin wrapper for fs to group files by type",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Andrew Nichols <tandrewnichols@gmail.com>",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "sinon": "*"
   },
   "keywords": ["fs", "files", "readdir"],
-  "main": "./lib",
+  "main": "./lib/kindly",
   "engines": {
     "node": ">=0.8.0"
   }
