@@ -1,0 +1,34 @@
+{
+  "name": "kindly",
+  "description": "A thin wrapper for fs to group files by type",
+  "version": "0.0.1",
+  "author": "Andrew Nichols <tandrewnichols@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tandrewnichols/kindly.git"
+  },
+  "homepage": "https://github.com/tandrewnichols/kindly",
+  "bugs": "https://github.com/tandrewnichols/kindly/issues",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha test",
+    "watch": "mocha -R min --suppress-stack --watch test"
+  },
+  "dependencies": {
+    "underscore": "*",
+    "async": "0.2.10"
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.1",
+    "mocha-given": "0.0.18",
+    "expect.js": "~0.2.0",
+    "sandboxed-module": "0.3.0",
+    "mocha": "git://github.com/tandrewnichols/mocha.git#suppress-stack",
+    "sinon": "*"
+  },
+  "keywords": ["fs", "files", "readdir"],
+  "main": "./lib",
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
