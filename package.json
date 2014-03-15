@@ -19,7 +19,7 @@
     "async": "0.2.10"
   },
   "devDependencies": {
-    "coffee-script": "1.6.1",
+    "coffee-script": "1.7.1",
     "mocha-given": "0.0.18",
     "expect.js": "~0.2.0",
     "sandboxed-module": "0.3.0",
