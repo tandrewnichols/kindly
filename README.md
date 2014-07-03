@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tandrewnichols/kindly.png)](https://travis-ci.org/tandrewnichols/kindly)
+[![Build Status](https://travis-ci.org/mantacode/kindly.png)](https://travis-ci.org/mantacode/kindly)
 
 # Kindly
 
