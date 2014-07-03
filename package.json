@@ -2,31 +2,41 @@
   "name": "kindly",
   "description": "A thin wrapper for fs to group files by type",
   "version": "0.0.2",
-  "author": "Andrew Nichols <tandrewnichols@gmail.com>",
+  "author": {
+    "name": "mantacode",
+    "email": "code@manta.com",
+    "url": "www.manta.com"
+  },
+  "contributors": [
+    {
+      "name": "Andrew Nichols",
+      "email": "tandrewnichols@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/tandrewnichols/kindly.git"
+    "url": "git://github.com/mantacode/kindly.git"
   },
-  "homepage": "https://github.com/tandrewnichols/kindly",
-  "bugs": "https://github.com/tandrewnichols/kindly/issues",
+  "homepage": "https://github.com/mantacode/kindly",
+  "bugs": "https://github.com/mantacode/kindly/issues",
   "license": "MIT",
   "scripts": {
     "test": "mocha test",
     "watch": "mocha -R min --suppress-stack --watch test"
   },
   "dependencies": {
-    "underscore": "*",
-    "async": "0.2.10"
+    "underscore": "~1.6.0",
+    "async": "~0.2.10"
   },
   "devDependencies": {
-    "coffee-script": "1.7.1",
-    "mocha-given": "0.0.18",
-    "expect.js": "~0.2.0",
-    "sandboxed-module": "0.3.0",
+    "coffee-script": "~1.7.1",
+    "mocha-given": "~0.0.18",
+    "indeed": "~1.0.6",
+    "proxyquire": "~1.0.1",
     "mocha": "git://github.com/tandrewnichols/mocha.git#suppress-stack",
-    "sinon": "*"
+    "sinon": "~1.10.2"
   },
-  "keywords": ["fs", "files", "readdir"],
+  "keywords": ["fs", "files", "readdir", "type", "kind"],
   "main": "./lib/kindly",
   "engines": {
     "node": ">=0.8.0"

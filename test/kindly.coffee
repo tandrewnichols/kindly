@@ -1,7 +1,7 @@
-sinon = require('sinon')
-
 describe "kindly", ->
   Given -> @fs = spyObj(['readdirSync', 'statSync', 'readdir', 'stat'])
+  Given -> @kindly = sandbox '../lib/kindly',
+    fs: @fs
 
   context 'sync', ->
     Given -> @fs.readdirSync.withArgs('/dir').returns [
@@ -16,10 +16,8 @@ describe "kindly", ->
     Given -> @fs.statSync.withArgs('/dir/symlink').returns
       isFile: -> false
       isDirectory: -> false
-    Given -> @kindly = sandbox 'lib/kindly',
-      fs: @fs
     When -> @result = @kindly.get('/dir')
-    Then -> expect(@result).to.eql
+    Then -> expect(@result).to.deep.equal
       files: ['/dir/foo.txt']
       directories: ['/dir/bar']
       other: ['/dir/symlink']
@@ -36,10 +34,8 @@ describe "kindly", ->
       isFile: -> false
       isDirectory: -> false
     Given -> @cb = sinon.spy()
-    Given -> @kindly = sandbox 'lib/kindly',
-      fs: @fs
     When -> @kindly.get('/dir', @cb)
-    Then -> @cb.calledWith null,
+    Then -> expect(@cb).to.have.been.calledWith null,
       files: ['/dir/foo.txt']
       directories: ['/dir/bar']
       other: ['/dir/symlink']
