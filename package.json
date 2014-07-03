@@ -1,7 +1,7 @@
 {
   "name": "kindly",
   "description": "A thin wrapper for fs to group files by type",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "mantacode",
     "email": "code@manta.com",
@@ -36,7 +36,13 @@
     "mocha": "git://github.com/tandrewnichols/mocha.git#suppress-stack",
     "sinon": "~1.10.2"
   },
-  "keywords": ["fs", "files", "readdir", "type", "kind"],
+  "keywords": [
+    "fs",
+    "files",
+    "readdir",
+    "type",
+    "kind"
+  ],
   "main": "./lib/kindly",
   "engines": {
     "node": ">=0.8.0"
