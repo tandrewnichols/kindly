@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mantacode/kindly.png)](https://travis-ci.org/mantacode/kindly)
+[![Build Status](https://travis-ci.org/mantacode/kindly.png)](https://travis-ci.org/mantacode/kindly) [![downloads](http://img.shields.io/npm/dm/kindly.svg)](https://npmjs.org/package/kindly) [![npm](http://img.shields.io/npm/v/kindly.svg)](https://npmjs.org/package/kindly)
 
 # Kindly
 
