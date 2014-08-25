@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/mantacode/kindly.png)](https://travis-ci.org/mantacode/kindly) [![downloads](http://img.shields.io/npm/dm/kindly.svg)](https://npmjs.org/package/kindly) [![npm](http://img.shields.io/npm/v/kindly.svg)](https://npmjs.org/package/kindly) [![Code Climate](https://codeclimate.com/github/mantacode/kindly/badges/gpa.svg)](https://codeclimate.com/github/mantacode/kindly) [![Test Coverage](https://codeclimate.com/github/mantacode/kindly/badges/coverage.svg)](https://codeclimate.com/github/mantacode/kindly)
+[![Build Status](https://travis-ci.org/mantacode/kindly.png)](https://travis-ci.org/mantacode/kindly) [![downloads](http://img.shields.io/npm/dm/kindly.svg)](https://npmjs.org/package/kindly) [![npm](http://img.shields.io/npm/v/kindly.svg)](https://npmjs.org/package/kindly) [![Code Climate](https://codeclimate.com/github/mantacode/kindly/badges/gpa.svg)](https://codeclimate.com/github/mantacode/kindly) [![Test Coverage](https://codeclimate.com/github/mantacode/kindly/badges/coverage.svg)](https://codeclimate.com/github/mantacode/kindly) [![dependencies](https://david-dm.org/mantacode/kindly.png)](https://david-dm.org/mantacode/kindly)
+
+[![NPM info](https://nodei.co/npm/kindly.png?downloads=true)](https://nodei.co/npm/kindly.png?downloads=true)
 
 # Kindly
 

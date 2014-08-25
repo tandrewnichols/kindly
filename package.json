@@ -25,8 +25,8 @@
     "watch": "mocha -R min --suppress-stack --watch test"
   },
   "dependencies": {
-    "underscore": "~1.6.0",
-    "async": "~0.2.10"
+    "async": "^0.2.10",
+    "underscore": "~1.6.0"
   },
   "devDependencies": {
     "coffee-script": "^1.7.1",
@@ -40,8 +40,7 @@
     "mocha-given": "git://github.com/tandrewnichols/mocha-given.git",
     "mocha-lcov-reporter": "0.0.1",
     "proxyquire": "~1.0.1",
-    "sinon": "~1.10.2",
-    "task-master": "^1.0.4"
+    "sinon": "~1.10.2"
   },
   "keywords": [
     "fs",
