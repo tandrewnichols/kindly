@@ -21,7 +21,7 @@
   "bugs": "https://github.com/mantacode/kindly/issues",
   "license": "MIT",
   "scripts": {
-    "test": "mocha test",
+    "test": "grunt",
     "watch": "mocha -R min --suppress-stack --watch test"
   },
   "dependencies": {
@@ -29,12 +29,19 @@
     "async": "~0.2.10"
   },
   "devDependencies": {
-    "coffee-script": "~1.7.1",
-    "mocha-given": "~0.0.18",
+    "coffee-script": "^1.7.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-cov": "^0.3.0",
+    "grunt-mocha-test": "^0.11.0",
     "indeed": "~1.0.6",
-    "proxyquire": "~1.0.1",
+    "jshint-stylish": "^0.4.0",
     "mocha": "git://github.com/tandrewnichols/mocha.git#suppress-stack",
-    "sinon": "~1.10.2"
+    "mocha-given": "git://github.com/tandrewnichols/mocha-given.git",
+    "mocha-lcov-reporter": "0.0.1",
+    "proxyquire": "~1.0.1",
+    "sinon": "~1.10.2",
+    "task-master": "^1.0.4"
   },
   "keywords": [
     "fs",
@@ -46,5 +53,12 @@
   "main": "./lib/kindly",
   "engines": {
     "node": ">=0.8.0"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "kindly/lib"
+      ]
+    }
   }
 }
