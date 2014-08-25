@@ -4,6 +4,7 @@ before_install:
 install:
   - "npm install npm -g"
   - "npm install grunt-cli -g"
+  - "npm install codeclimate-test-reporter -g"
   - "npm install"
 script:
   - "grunt travis"
