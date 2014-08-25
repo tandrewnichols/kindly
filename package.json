@@ -25,7 +25,7 @@
     "watch": "mocha -R min --suppress-stack --watch test"
   },
   "dependencies": {
-    "async": "^0.2.10",
+    "async": "^0.9.0",
     "underscore": "~1.6.0"
   },
   "devDependencies": {

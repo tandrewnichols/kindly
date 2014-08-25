@@ -35,7 +35,7 @@ describe "kindly", ->
       isDirectory: -> false
     Given -> @cb = sinon.spy()
     When -> @kindly.get('/dir', @cb)
-    Then -> expect(@cb).to.have.been.calledWith null,
+    Then -> expect(@cb).to.have.been.calledWith undefined,
       files: ['/dir/foo.txt']
       directories: ['/dir/bar']
       other: ['/dir/symlink']
