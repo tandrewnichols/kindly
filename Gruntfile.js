@@ -58,16 +58,12 @@ module.exports = function(grunt) {
       }
     },
     matrix: {
-      'v0.10': {
-        options: {
-          cmd: 'codeclimate < coverage/coverage.lcov'
-        }
-      }
+      'v0.10': 'codeclimate < coverage/coverage.lcov'
     }
   });
   
   grunt.registerTask('mocha', ['mochaTest:test']);
   grunt.registerTask('default', ['jshint:all', 'mocha']);
   grunt.registerTask('coverage', ['mochacov:html']);
-  grunt.registerTask('travis', ['jshint:all', 'mocha', 'travis']);
+  grunt.registerTask('ci', ['jshint:all', 'mocha', 'travis']);
 }
