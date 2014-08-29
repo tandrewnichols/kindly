@@ -22,7 +22,6 @@
   "license": "MIT",
   "scripts": {
     "test": "grunt",
-    "watch": "mocha -R min --suppress-stack --watch test",
     "publish": "if echo $USERNAME | grep -cq 'anichols'; then publisher run; fi"
   },
   "dependencies": {
