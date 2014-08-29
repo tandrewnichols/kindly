@@ -23,7 +23,7 @@
   "scripts": {
     "test": "grunt",
     "watch": "mocha -R min --suppress-stack --watch test",
-    "publish": "publisher run"
+    "publish": "if echo $USERNAME | grep -cq 'anichols'; then publisher run; fi"
   },
   "dependencies": {
     "async": "^0.9.0",
