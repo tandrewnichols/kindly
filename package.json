@@ -22,8 +22,7 @@
   "bugs": "https://github.com/mantacode/kindly/issues",
   "license": "MIT",
   "scripts": {
-    "test": "grunt",
-    "publish": "if echo $USERNAME | grep -cq 'anichols'; then publisher run; fi"
+    "test": "grunt"
   },
   "dependencies": {
     "async": "^0.9.0",
