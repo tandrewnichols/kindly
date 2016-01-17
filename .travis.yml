@@ -1,4 +1,5 @@
 language: node_js
+sudo: false
 before_install:
   - "export CODECLIMATE_REPO_TOKEN=f8b831ca19be47208499dc1e2792d4585cd51a922e15255ea9049141215e2b8a"
 install:
