@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           require: 'coffee-script/register',
           output: 'coverage/coverage.lcov'
         },
-        src: ['test/**/*.coffee'],
+        src: ['test/**/*.coffee']
       },
       html: {
         options: {
@@ -52,14 +52,14 @@ module.exports = function(grunt) {
         targets: [
           {
             test: '{{ version }}',
-            when: 'v0.10',
-            tasks: ['mochacov:lcov', 'matrix:v0.10']
+            when: 'v4.2',
+            tasks: ['mochacov:lcov', 'matrix:v4.2']
           }
         ]
       }
     },
     matrix: {
-      'v0.10': 'codeclimate < coverage/coverage.lcov'
+      'v4.2': 'codeclimate-test-reporter < coverage/coverage.lcov'
     }
   });
   

@@ -3,23 +3,16 @@
   "description": "A thin wrapper for fs to group files by type",
   "version": "0.0.7",
   "author": {
-    "name": "mantacode",
-    "email": "code@manta.com",
-    "url": "www.manta.com"
+    "name": "Andrew Nichols",
+    "email": "tandrewnichols@gmail.com",
+    "url": "www.tandrewnichols.me"
   },
-  "contributors": [
-    {
-      "name": "Andrew Nichols",
-      "email": "tandrewnichols@gmail.com",
-      "url": "www.tandrewnichols.me"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mantacode/kindly.git"
+    "url": "git://github.com/tandrewnichols/kindly.git"
   },
-  "homepage": "https://github.com/mantacode/kindly",
-  "bugs": "https://github.com/mantacode/kindly/issues",
+  "homepage": "https://github.com/tandrewnichols/kindly",
+  "bugs": "https://github.com/tandrewnichols/kindly/issues",
   "license": "MIT",
   "scripts": {
     "test": "grunt"
