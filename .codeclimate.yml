@@ -15,6 +15,7 @@ checks:
     config:
       threshold: 40
 exclude_patterns:
+  - ".*"
   - ".*.*"
   - "gulp/**.js"
   - "test/**/*.js"
