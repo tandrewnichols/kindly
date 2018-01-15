@@ -4,40 +4,57 @@
 
 # Kindly
 
-### Purpose
+## Purpose
 
-Kindly is a (very) thin wrapper around fs.readdir that groups files by type. That seems like a small thing, but it's really useful for requiring all the files in a single directory.
+Kindly is a thin wrapper around fs.readdir that groups files by type.
 
-### Installation
+## Installation
 
 `npm install kindly --save`
 
 `var kindly = require('kindly');`
 
-### API
+## API
 
-Kindly has only one method, `get`, which works synchronously or asynchronously depending on whether you give it a callback.
+### .get(directory[, options, callback])
 
-Synchronously:
+Get files in a directory asynchronously. This function returns a promise but also accepts a callback if you prefer a more traditional style of async.
 
-```javascript
-var descriptors = kindly.get('/dir');
-```
+_Promise-based_:
 
-Asynchronously:
+```js
+kindly.get('dir').then(results => {
 
-```javascript
-kindly.get('/dir', function(err, descriptors) {
+}, err => {
 
 });
 ```
 
-In either case, descriptors will be an object in this form:
+_Callback-based_:
+
+```javascript
+kindly.get('dir', (err, results) => {
+
+});
+```
+
+### .getSync(directory[, options])
+
+Get files in a directory synchronously.
+
+```js
+let results = kindly.getSync('dir');
+```
+
+## Results
+
+In all cases described above, results will be an object in this form:
 
 ```javascript
 {
   files: [],
   directories: [],
+  symlinks: [],
   other: []
 }
 ```
@@ -48,13 +65,31 @@ All file and directory names are prefaced with the path you pass to kindly. Thus
 var kindly = require('kindly');
 var path = require('path');
 
-kindly.get(path.resolve('lib'), function(err, descriptors) {
+kindly.get(path.resolve('lib')).then((results) => {
 
 });
 ```
 
-all of your descriptors will be fully qualified paths which can be used from any directory.
+all of results will be fully qualified paths.
 
-That's it folks!
-<br><br><br><br><br><br><br><br>
-Seriously, are you still reading this?
+## Options
+
+### noFollow
+
+By default, `kindly` uses `fs.stat` and `fs.statSync` which, in the case of symlinks, give the filetype of the _real_ file to which the symlink points (i.e. by default, you will never get symlinks back in your results). If you would prefer to get symlinks back as symlinks instead of files, you can pass `{ noFollow: true }` as the second argument, which will force this library to use `fs.lstat` and `fs.lstatSync` instead.
+
+```js
+kindly.get('dir', { noFollow: true }).then(results => {
+
+});
+
+kindly.get('dir', { noFollow: true }, results => {
+
+});
+
+let results = kindly.get('dir', { noFollow: true });
+```
+
+## Contributing
+
+Please see [the contribution guidelines](CONTRIBUTING.md).
