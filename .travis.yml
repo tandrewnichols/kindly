@@ -1,20 +1,17 @@
 language: node_js
 sudo: false
-before_install:
-  - "export CODECLIMATE_REPO_TOKEN=f8b831ca19be47208499dc1e2792d4585cd51a922e15255ea9049141215e2b8a"
+addons:
+  code_climate:
+    repo_token: "f8b831ca19be47208499dc1e2792d4585cd51a922e15255ea9049141215e2b8a"
 install:
-  - "npm install grunt-cli codeclimate-test-reporter -g"
   - "npm install"
 script:
-  - "grunt ci"
+  - "npm run travis"
 node_js:
-  - "0.10"
-  - "0.12"
-  - "4"
-  - "5"
-  - "iojs-v1"
-  - "iojs-v2"
-  - "iojs-v3"
+  - "6"
+  - "7"
+  - "8"
+  - "9"
 cache:
   directories:
     - 'node_modules'

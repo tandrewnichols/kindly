@@ -15,26 +15,25 @@
   "bugs": "https://github.com/tandrewnichols/kindly/issues",
   "license": "MIT",
   "scripts": {
-    "test": "grunt"
+    "test": "gulp",
+    "travis": "gulp travis"
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "underscore": "~1.6.0"
+    "async": "^2.6.0",
+    "fs-extra": "^5.0.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.7.1",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-mocha-cov": "^0.3.0",
-    "grunt-mocha-test": "^0.11.0",
-    "grunt-travis-matrix": "0.0.3",
-    "indeed": "~1.0.6",
-    "jshint-stylish": "^0.4.0",
-    "mocha": "git://github.com/tandrewnichols/mocha.git#suppress-stack",
-    "mocha-given": "git://github.com/tandrewnichols/mocha-given.git",
-    "mocha-lcov-reporter": "0.0.1",
-    "proxyquire": "~1.0.1",
-    "sinon": "~1.10.2"
+    "eslint-codeframe-formatter": "^1.0.2",
+    "execa": "^0.9.0",
+    "gulp": "^4.0.0",
+    "gulp-codeclimate-reporter": "github:tandrewnichols/gulp-codeclimate-reporter",
+    "gulp-eslint": "^4.0.1",
+    "gulp-mocha": "^5.0.0",
+    "gulp-open": "^2.1.0",
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1",
+    "should": "^13.2.1",
+    "sinon": "^4.1.5"
   },
   "keywords": [
     "fs",
@@ -45,13 +44,6 @@
   ],
   "main": "./lib/kindly",
   "engines": {
-    "node": ">=0.8.0"
-  },
-  "config": {
-    "blanket": {
-      "pattern": [
-        "kindly/lib"
-      ]
-    }
+    "node": ">=6"
   }
 }
