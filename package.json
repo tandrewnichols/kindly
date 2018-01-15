@@ -1,7 +1,7 @@
 {
   "name": "kindly",
   "description": "A thin wrapper for fs to group files by type",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "author": {
     "name": "Andrew Nichols",
     "email": "tandrewnichols@gmail.com",
